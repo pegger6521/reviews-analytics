@@ -27,6 +27,6 @@ with open('reviews.txt', 'r') as f:
 		if count % 100000 == 0:
 			print(len(data))
 
-print(data[100]) #這是讀取第一筆留言
-print('--------------------------') #這是印出分隔符號
-print(data[101]) #然後再印出第二筆留言
+print(data[100]) 
+print('--------------------------') 
+print(data[101]) 
