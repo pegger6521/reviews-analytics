@@ -40,7 +40,7 @@ for d in data:
 print('留言的平均長度為', sum_len/len(data))
 
 # 加入篩選的概念
-# 挑戰: 篩選出留言字母數小於100的筆數
+# 挑戰1: 篩選出留言字母數小於100的筆數
 # 重點: 先寫一個for loop, 就是一筆一筆把清單裡的資訊抓出來
 # 重點: 如果字母樹長度小於100, 就把它裝進new清單中
 
@@ -53,3 +53,20 @@ print('共有',len(new),'筆留言的字母數低於100個字')
 print(new[100])
 print(new[101])
 
+# 挑戰2: 把留言裡面提到love的篩選出來
+
+love = []
+for d in data:
+	if 'love' in d:
+		love.append(d)
+print('這些留言裡有提到love的留言,共有', len(love), '筆')
+print(love[0])
+
+# 自己玩玩看其他的字串
+
+suck = []
+for d in data:
+	if 'suck' in d:
+		suck.append(d)
+print('這些留言裡面有提到suck的, 共有', len(suck), '筆')
+print(suck[0])
